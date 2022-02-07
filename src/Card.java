@@ -4,26 +4,29 @@ public class Card {
     private char suit;
     private int value;
     private boolean playable;
+    private char rank;
 
     // CONSTRUCTORS
     public Card() {
         this.color = "red";
-        this.suit = 'A';
+        this.suit = 'H';
         this.value =  1;
         this.playable = false;
+        this.rank = 'A';
     }
-    public Card(String color, char suit, int value, boolean playable) {
+    public Card(String color, char suit, int value, boolean playable, char rank) {
         this.color = color;
         this.suit = suit;
         this.value =  value;
         this.playable = playable;
+        this.rank = rank;
     }
 
     // ACCESSORS
     public String getColor() {
         return this.color;
     }
-    public char getRank() {
+    public char getSuit() {
         return this.suit;
     }
     public int getValue() {
@@ -32,12 +35,15 @@ public class Card {
     public boolean getPlayable() {
         return this.playable;
     }
+    public char getRank() {
+        return this.rank;
+    }
 
     // MUTATORS
     public void setColor(String color) {
         this.color = color;
     }
-    public void setRank(char suit) {
+    public void setSuit(char suit) {
         this.suit = suit;
     }
     public void setValue(int value) {
@@ -45,6 +51,9 @@ public class Card {
     }
     public void isPlayable(boolean playable) {
         this.playable = playable;
+    }
+    public void setRank(char rank) {
+        this.rank = rank;
     }
 
     // METHODS
