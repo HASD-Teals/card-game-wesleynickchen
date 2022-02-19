@@ -1,3 +1,7 @@
+/**
+ * Great Job!
+ * - Mr Smith
+ */
 import java.util.Scanner;
 
 public class CardGameClient {
